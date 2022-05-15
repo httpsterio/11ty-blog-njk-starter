@@ -2,15 +2,15 @@
 layout: main
 ---
 
-{% include "nav.liquid" %}
+{% include "nav.njk" %}
 
 <p class="text-5xl md:text-6xl font-black pt-10 md:pt-30 pb-4 leading-tight">
     {{ title}}
 </p>
 
 <div>
-    <em>{{ date | date: "%Y-%m-%d" }}</em> &middot; 
-    <span>{{ content | readTime }} min read</span>
+    <em>{{ date }}</em> &middot; 
+    <span>{{ content }} min read</span>
 </div>
 
 <div class="mt-3 pb-10">
@@ -27,4 +27,4 @@ layout: main
   {{ content }}
 </div>
 
-{% include "author.liquid" %}
+{% include "author.njk" %}
