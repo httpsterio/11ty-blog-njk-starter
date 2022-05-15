@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Mainstream Sheep Records<br>主流羊音盤
+title: Mainstream Sheep Records
+subtitle: 主流羊音盤
 pagination:
   data: collections.posts
   size: 10
@@ -13,9 +14,9 @@ pagination:
 <div class="py-4">
   <p>
     <span class="text-2xl sm:text-4xl font-bold hover:text-blue-700 leading-tight"><a href="{{ post.url }}">{{ post.data.title }}</a></span>
-    <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.templateContent }} min read</span>
+    <span class="text-base sm:text-2xl font-normal"> &middot; {{ post.content | safe }} min read</span>
   </p>
-  <em>{{ post.date | date: "%Y-%m-%d" }}</em>
+  <em>{{ post.date | postDate }}</em>
   <p class="mt-4">{{ post.data.post_excerpt }}...</p>
   
   <div class="flex justify-between items-center mt-4">

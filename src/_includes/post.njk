@@ -9,8 +9,8 @@ layout: main
 </p>
 
 <div>
-    <em>{{ date }}</em> &middot; 
-    <span>{{ content }} min read</span>
+    <em>{{ date | postDate }}</em> &middot; 
+    <span>{{ content | readTime }} min read</span>
 </div>
 
 <div class="mt-3 pb-10">
@@ -24,7 +24,7 @@ layout: main
   </div>
 
 <div class="prose dark:prose-invert hover:prose-a:text-blue-500">
-  {{ content }}
+  {{ content | safe }}
 </div>
 
 {% include "author.njk" %}

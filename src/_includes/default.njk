@@ -1,11 +1,7 @@
 ---
 layout: main
 ---
-
-<p class="text-5xl md:text-6xl font-black py-10 md:py-20 leading-tight">
- {{ title }}
-</p>
-  
+<p class="text-5xl md:text-5xl font-black py-10 md:pt-20 pb-5 leading-tight">{{ title }}</p>
+<p class="text-5xl md:text-5xl font-black pb-5ö md:pb-5 leading-tight">{{ subtitle }}</p>
 {% include "nav.njk" %}
-
-{{ content }}
+{{ content | safe }}
