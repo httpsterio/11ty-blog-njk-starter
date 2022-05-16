@@ -63,7 +63,7 @@ npm start
 
 ## Deployment
 [<img src="https://www.netlify.com/img/deploy/button.svg" />](
-https://app.netlify.com/start/deploy?repository=https://github.com/httpsterio/11ty-blog-starter)
+https://app.netlify.com/start/deploy?repository=https://github.com/httpsterio/11ty-blog-njk-starter)
 
 
 
