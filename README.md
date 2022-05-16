@@ -1,14 +1,16 @@
-# Blog starter
+# 11ty blog njk Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a9b962b7-9df1-49db-9b40-e5fedbc8ba9e/deploy-status)](https://app.netlify.com/sites/eleventy-blog-starter/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c6f542b0-dce3-4631-8699-ada833a5f7ff/deploy-status)](https://app.netlify.com/sites/11ty-blog-njk-starter/deploys)
 
-View the live demo [here](https://eleventy.rongying.co/), hosted on Netlify
+View the live demo [here](https://11ty-blog-njk-starter.netlify.app), hosted on Netlify
 
 ![homepage](blog-v2.png)
 ![darkmode](blog-dark.png)
 
 ## Aims
-A blog that still runs without javascript. Hence, no bundlers. 
+A blog that still runs without javascript. Hence, no bundlers.
+
+This is forked from [Rong Ying's starter](https://github.com/kohrongying/11ty-blog-starter) and converted to use Nunjucks instead of Liquid.
 
 
 ## Features
@@ -32,7 +34,9 @@ A blog that still runs without javascript. Hence, no bundlers.
 
 + Shortcode to handle images
   - Add image under `src/assets/img/posts` and use the asset_img short code
-  - `{% asset_img 'filename' 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg' 'mailbox' %}`
+  - `{% asset_img 'filename' 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg' 'picture of a mailbox' %}`
+  - You can provide an optional third argument if your image isn't inside `src/assets/img/posts`
+  - eg. `{% asset_img 'mailbox.jpg' 'picture of a mailbox' '/images/' ` 
 
 - Draft posts using the `published` frontmatter
 
@@ -59,7 +63,7 @@ npm start
 
 ## Deployment
 [<img src="https://www.netlify.com/img/deploy/button.svg" />](
-https://app.netlify.com/start/deploy?repository=https://github.com/kohrongying/11ty-blog-starter)
+https://app.netlify.com/start/deploy?repository=https://github.com/httpsterio/11ty-blog-starter)
 
 
 
