@@ -34,9 +34,10 @@ This is forked from [Rong Ying's starter](https://github.com/kohrongying/11ty-bl
 
 + Shortcode to handle images
   - Add image under `src/assets/img/posts` and use the asset_img short code
-  - `{% asset_img 'filename' 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg' 'picture of a mailbox' %}`
-  - You can provide an optional third argument if your image isn't inside `src/assets/img/posts`
-  - eg. `{% asset_img 'mailbox.jpg' 'picture of a mailbox' '/images/' ` 
+  - `{% asset_img 'filename', 'alt_text' %}` eg. `{% asset_img 'mailbox.jpg', 'picture of a mailbox' %}`
+  - You can provide an optional third argument for the image folder path if your image isn't inside `src/assets/img/posts`
+  - eg. `{% asset_img 'mailbox.jpg', 'picture of a mailbox', '/images/' ` 
+  - the comma between argument's is __not__ optional
 
 - Draft posts using the `published` frontmatter
 

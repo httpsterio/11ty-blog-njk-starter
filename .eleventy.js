@@ -64,7 +64,20 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      input: 'src'
-    }
+      input: 'src',
+      output: '_site'
+    },
+		templateFormats: [
+			"md",
+			"njk",
+			"html",
+			"liquid",
+		],
+
+		// Pre-process *.md files with: (default: `liquid`)
+		markdownTemplateEngine: "njk",
+
+		// Pre-process *.html files with: (default: `liquid`)
+		htmlTemplateEngine: "njk"
   }
 }
